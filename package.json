@@ -22,7 +22,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/vue": "^6.4.2",
     "@vitejs/plugin-vue": "^1.2.3",
-    "@vue/compiler-sfc": "^3.0.5",
+    "@vue/compiler-sfc": "^3.1.2",
     "autoprefixer": "^10.2.6",
     "cross-fetch": "^3.1.4",
     "husky": "^6.0.0",
