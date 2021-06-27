@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "vivaxy.vscode-conventional-commits",
+    "bradlc.vscode-tailwindcss",
+    "johnsoncodehk.volar",
+    "dariofuzinato.vue-peek",
+    "editorconfig.editorconfig",
+    "cpylua.language-postcss",
+    "mikestead.dotenv"
+  ]
+}

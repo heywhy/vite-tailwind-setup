@@ -1,0 +1,44 @@
+{
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "format": "prettier --write .",
+    "prepare": "husky install",
+    "serve": "vite preview",
+    "test": "jest",
+    "test:leaks": "jest --detectLeaks",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "vue": "^3.1.2",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-typescript": "^7.14.5",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/vue": "^6.4.2",
+    "@vitejs/plugin-vue": "^1.2.3",
+    "@vue/compiler-sfc": "^3.0.5",
+    "autoprefixer": "^10.2.6",
+    "cross-fetch": "^3.1.4",
+    "husky": "^6.0.0",
+    "jest": "^26",
+    "jest-serializer-vue": "^2.0.2",
+    "jest-transform-stub": "^2.0.0",
+    "lint-staged": "^11.0.0",
+    "postcss": "^8.3.5",
+    "postcss-import": "^14.0.2",
+    "prettier": "^2.3.2",
+    "tailwindcss": "^2.2.4",
+    "ts-jest": "^26",
+    "typescript": "^4.3.2",
+    "vite": "^2.3.8",
+    "vue-jest": "^5.0.0-alpha.10",
+    "vue-tsc": "^0.0.24",
+    "weak-napi": "^2.0.2"
+  }
+}
