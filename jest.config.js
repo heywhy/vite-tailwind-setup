@@ -62,6 +62,11 @@ module.exports = {
       babelConfig: '<rootDir>/babel.config.js',
       tsconfig: '<rootDir>/tsconfig.json',
     },
+    'vue-jest': {
+      compilerOptions: {
+        propsDestructureTransform: true,
+      },
+    },
   },
 
   // The maximum amount of workers used to run your tests. Can be specified as % or a number. E.g. maxWorkers: 10% will use 10% of your CPU amount + 1 as the maximum worker number. maxWorkers: 2 will use a maximum of 2 workers.
@@ -133,7 +138,7 @@ module.exports = {
   // slowTestThreshold: 5,
 
   // A list of paths to snapshot serializer modules Jest should use for snapshot testing
-  snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue'],
+  snapshotSerializers: ['jest-serializer-vue'],
 
   // The test environment that will be used for testing
   testEnvironment: 'jsdom',
@@ -168,7 +173,7 @@ module.exports = {
   // A map from regular expressions to paths to transformers
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
-    '.*\\.(vue)$': 'vue-jest',
+    '.*\\.(vue)$': '@vue/vue3-jest',
     '^.+\\.jsx?$': 'babel-jest',
     '.+\\.(css|styl|less|sass|scss|png|jpg|svg|ttf|woff|woff2)$':
       require.resolve('jest-transform-stub'),
